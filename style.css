@@ -91,7 +91,7 @@ i {
 }
 
 li {
-display: inline-flex;
-flex-direction: column;
-padding-left: 12px;
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 12px;
 }
