@@ -7,10 +7,10 @@ body {
 }
 
 .navibar {
-    background-color: #3e3c3c;
+    background-color: #3E3C3C;
     display: flex;
     justify-content: space-between;
-    color: #ffffff;
+    color: #FFFFFF;
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
