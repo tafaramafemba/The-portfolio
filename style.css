@@ -161,7 +161,10 @@ p {
   box-sizing: border-box;
   width: 49px;
   height: 40px;
-  padding: 10px, 12px, 10px, 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .boot {
@@ -234,6 +237,7 @@ p {
   height: 124px;
   top: 120px;
 }
+
 .btnresume {
   background: #ff6b00;
   color: #fff;
