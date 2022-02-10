@@ -28,7 +28,10 @@ body {
 }
 
 .name {
+  text-decoration: none;
+  color: #fff;
   padding-left: 15px;
+  padding-bottom: 15px;
   font-family: 'Roboto', serif;
   font-weight: 700;
 }
@@ -85,4 +88,10 @@ i {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+li {
+display: inline-flex;
+flex-direction: column;
+padding-left: 12px;
 }
