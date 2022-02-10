@@ -95,3 +95,185 @@ li {
   flex-direction: column;
   padding-left: 12px;
 }
+
+.mid-part {
+  padding-left: 20px;
+  padding-top: 60px;
+  padding-right: 20px;
+  padding-bottom: 120px;
+}
+
+.recentwork {
+  align-content: center;
+  font-family: 'Crete Round', serif;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  border-bottom: 1px solid #212121;
+  padding-bottom: 30px;
+}
+
+.balay {
+  width: 310px;
+}
+
+.multipost{
+  font-family: Crete Round;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+p {
+  font-family: Crete Round;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.singular-p {
+  font-family: Crete Round;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+.multiple-p{
+  font-family: "Inter";
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.languages {
+  padding-left: 0px;
+}
+
+.btn {
+  font-family: "Inter";
+  background-color: #fff;
+  border: 1px solid #8993A4;
+  box-sizing: border-box;
+  width: 49px;
+  Height: 40px;
+  Padding: 10px, 12px, 10px, 12px;
+}
+
+.boot {
+  width: 95px;
+}
+
+.see {
+  background: #ff6b00;
+  color: #fff;
+  height: 48px;
+  width: 124px;
+  left: 0px;
+  top: 259px;
+  border-radius: 0px;
+  border: 0 none;
+  padding: 12px;
+  font-family: "Inter";
+  font-size: 18px;
+}
+
+.pro {
+  width: 320px;
+}
+
+.professional-btn {
+  font-family: Crete Round;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;  
+  color: #fff;
+  padding-left: 10px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  background-image: url(Images/grid-template.png);
+}
+
+.multi {
+  display: flex;
+  flex-direction: column;
+  background-image: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 40px;
+}
+
+.about-me {
+  background-color: #1c1a19;
+}
+
+.about {
+  color: #f55800;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 81px;
+  padding-top: 120px;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  height: 124px;
+  top: 120px;
+}
+.btnresume{
+  background: #ff6b00;
+  color: #fff;
+  height: 48px;
+  width: 180px;
+  left: 0px;
+  top: 259px;
+  border-radius: 0px;
+  border: 0 none;
+  padding: 12px;
+  font-family: "Inter";
+  font-size: 18px;
+  margin-left: 24px;
+}
+
+.img-me {
+  padding-left: 200px;
+  border-bottom: 1px white;
+}
+
+.main-ul{
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
+  padding-bottom: 20px;
+  font-family: "Inter";
+}
+
+.headli {
+  padding-right: 40px;
+  font-size: 32px;
+  color: #fff;
+}
+
+.alignim {
+  padding-left: 20px;
+  font-size: 32px;
+  display: inline-flex;
+
+}
