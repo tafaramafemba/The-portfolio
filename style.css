@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;500&family=Poppins&family=Roboto:wght@700&display=swap');
 
 body {
-    margin: 0px;
-
-
+    margin: 0;
 }
 
 .navibar {
-  background-color: #3E3C3C;
+  background-color: #3e3c3c;
   display: flex;
   justify-content: space-between;
-  color: #FFFFFF;
-  font-family: Inter;
-  font-style: normal;
+  color: #fff;
+  font-style: inter;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
@@ -20,6 +17,10 @@ body {
   text-align: center;
   width: 100%;
   height: 60px;
+}
+
+.main {
+    background-color: #1c1a19;
 }
 
 .hamburger {
@@ -31,30 +32,26 @@ body {
   padding-left: 15px;
   font-family: 'Roboto', serif;
   font-weight: 700;
-
 }
 
 .introduction {
-  color: #F55800;
+  color: #f55800;
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 65px;
   line-height: 81px;
   padding-top: 120px;
-  margin-top: 0px;
+  margin-top: 0;
   padding-bottom: 0;
   padding-left: 24px;
   margin-bottom: 10px;
   height: 124px;
   top: 120px;
-
-
 }
 
 .occupation {
-  color: #FFFFFF;
-  font-family: Inter;
+  color: #fff;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -64,7 +61,7 @@ body {
 }
 
 .services {
-  color: #FFFFFF;
+  color: #fff;
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
@@ -78,7 +75,6 @@ body {
 i {
   color: white;
   font-size: 20px;
-
 }
 
 .submain {
@@ -91,3 +87,4 @@ i {
   flex-direction: column;
   gap: 12px;
 }
+
