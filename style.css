@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;500&family=Poppins&family=Roboto:wght@700&display=swap');
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .navibar {
@@ -9,7 +9,6 @@ body {
   display: flex;
   justify-content: space-between;
   color: #fff;
-  font-style: inter;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
@@ -20,7 +19,7 @@ body {
 }
 
 .main {
-    background-color: #1c1a19;
+  background-color: #1c1a19;
 }
 
 .hamburger {
@@ -87,4 +86,3 @@ i {
   flex-direction: column;
   gap: 12px;
 }
-
