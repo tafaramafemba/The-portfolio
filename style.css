@@ -189,6 +189,24 @@ p {
   width: 320px;
 }
 
+.see:hover {
+  background: #fff5e1;
+  color: #f55800;
+  border: 2px #f55800;
+}
+
+.see:active {
+  background: #e05304;
+  color: #fff;
+  border: 0 none;
+}
+
+.see:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+  border: 0 none;
+}
+
 .professional-btn {
   font-family: 'Crete Round', serif;
   font-size: 32px;
@@ -220,6 +238,9 @@ p {
 
 .about-me {
   background-color: #1c1a19;
+  background-image: url(Images/illustration-about-me.png);
+  background-repeat: no-repeat;
+  background-position: 100% 30%;
 }
 
 .about {
@@ -251,11 +272,25 @@ p {
   font-family: 'Inter', serif;
   font-size: 18px;
   margin-left: 24px;
+  margin-bottom: 325px;
 }
 
-.img-me {
-  padding-left: 200px;
-  border-bottom: 1px white;
+.btnresume:hover {
+  background: #fff5e1;
+  color: #f55800;
+  border: 2px #f55800;
+}
+
+.btnresume:active {
+  background: #e05304;
+  color: #fff;
+  border: 0 none;
+}
+
+.btnresume:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+  border: 0 none;
 }
 
 .main-ul {
