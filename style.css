@@ -93,6 +93,7 @@ i {
 li {
   float: left;
   padding-left: 12px;
+  list-style: none;
 }
 
 .mid-part {
