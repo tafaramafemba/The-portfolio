@@ -383,6 +383,23 @@ p {
   font-weight: 700;
 }
 
+.touchbtn:hover {
+  background: #fff5e1;
+  color: #f55800;
+  border: 2px #f55800;
+}
+
+.touchbtn:active {
+  background: #e05304;
+  color: #fff;
+  border: 0 none;
+}
+
+.touchbtn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+  border: 0 none;
+}
 .footer-icons {
   display: flex;
   justify-content: center;
