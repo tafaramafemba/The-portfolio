@@ -61,7 +61,7 @@ body {
 }
 
 .occupation {
-  color: #ffffff;
+  color: #fff;
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 500;
@@ -499,6 +499,7 @@ form {
     padding: 0;
     width: 500px;
   }
+
   .navi-item {
     text-decoration: none;
     color: #fff;
@@ -635,7 +636,6 @@ form {
   .skills2 {
     padding-left: 0;
   }
-
 
   .btnresume {
     margin-bottom: 100px;
