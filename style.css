@@ -354,7 +354,6 @@ p {
 
 .skills {
   padding-left: 60px;
-
   padding-bottom: 100px;
 }
 
@@ -365,6 +364,7 @@ p {
 .lang {
   padding-left: 50px;
 }
+
 .headli {
   padding-right: 40px;
   font-size: 32px;
@@ -483,7 +483,7 @@ form {
 @media (min-width: 992px) {
    /* desktop site */
   .hamburger {
-    display: none;
+  display: none;
   }
 
   .navilist {
@@ -513,15 +513,15 @@ form {
   }
 
   .occupation {
-    font-size: 32px
+    font-size: 32px;
   }
   
   .icons {
-   display: flex;
-   flex-direction: column;
-   align-self: flex-end;
-   gap: 15px;
-   margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    gap: 15px;
+    margin-bottom: 70px;
   }
 
   .submain {
@@ -533,9 +533,9 @@ form {
   }
 
   .introtext {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
   .recentwork {
@@ -557,7 +557,7 @@ form {
 
   .hrrecent {
     flex: 3;
-    width: 100%
+    width: 100%;
   }
 
   .multi {
@@ -603,7 +603,7 @@ form {
   .gridder {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 20px
+    grid-gap: 20px;
   }
 
   .about-me {
