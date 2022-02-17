@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;500&family=Poppins&family=Roboto:wght@700&display=swap');
 
+/* mobile site */
 body {
   margin: 0;
 }
@@ -18,6 +19,10 @@ body {
   height: 60px;
 }
 
+.navilist {
+  display: none;
+}
+
 .main {
   background-color: #1c1a19;
 }
@@ -31,9 +36,12 @@ body {
   text-decoration: none;
   color: #fff;
   padding-left: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-family: 'Roboto', serif;
   font-weight: 700;
+  font-size: 15px;
 }
 
 .introduction {
@@ -54,16 +62,18 @@ body {
 
 .occupation {
   color: #fff;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 44px;
   padding-left: 24px;
+  padding-top: 10px;
   margin-bottom: 0;
 }
 
 .services {
-  color: #fff;
+  color: #f4f5f7;
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
@@ -108,13 +118,12 @@ li {
   font-family: 'Crete Round', serif;
   font-size: 40px;
   line-height: 52px;
-  margin-bottom: 50px;
-  padding-top: 20px;
-  border-bottom: 1px solid #212121;
+  margin-bottom: 0;
   padding-bottom: 30px;
 }
 
 .balay {
+  padding-top: 70px;
   width: 310px;
 }
 
@@ -186,7 +195,7 @@ p {
 }
 
 .pro {
-  width: 320px;
+  width: 327px;
 }
 
 .see:hover {
@@ -202,6 +211,38 @@ p {
 }
 
 .see:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+  border: 0 none;
+}
+
+.probtn {
+  background: #ff6b00;
+  color: #fff;
+  height: 48px;
+  width: 124px;
+  left: 0;
+  top: 259px;
+  border-radius: 0;
+  border: 0 none;
+  padding: 12px;
+  font-family: 'Inter', serif;
+  font-size: 18px;
+}
+
+.probtn:hover {
+  background: #fff5e1;
+  color: #f55800;
+  border: 2px #f55800;
+}
+
+.probtn:active {
+  background: #e05304;
+  color: #fff;
+  border: 0 none;
+}
+
+.probtn:disabled {
   background: #f4f1f0;
   color: #5b5957;
   border: 0 none;
@@ -223,6 +264,7 @@ p {
   display: flex;
   flex-direction: column;
   background-image: url(Images/grid-template.png);
+  background-repeat: no-repeat;
 }
 
 .multi {
@@ -257,6 +299,10 @@ p {
   margin-bottom: 10px;
   height: 124px;
   top: 120px;
+}
+
+.abouthr {
+  width: 90%;
 }
 
 .btnresume {
@@ -300,8 +346,23 @@ p {
   font-size: 22px;
   line-height: 43px;
   color: #fff;
-  padding-bottom: 20px;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: 'Inter', serif;
+}
+
+.skills {
+  padding-left: 60px;
+  padding-bottom: 100px;
+}
+
+.skills2 {
+  padding-left: 50px;
+}
+
+.lang {
+  padding-left: 50px;
 }
 
 .headli {
@@ -417,4 +478,197 @@ p {
 
 form {
   padding-bottom: 100px;
+}
+
+@media (min-width: 992px) {
+  /* desktop site */
+  .hamburger {
+    display: none;
+  }
+
+  .navilist {
+    display: flex;
+    padding-right: 100px;
+    font-family: 'Inter', serif;
+    font-weight: 600;
+    font-size: 15px;
+    column-gap: 25px;
+  }
+
+  .balay {
+    padding: 0;
+    flex: 1.5 1.5 60%;
+  }
+
+  .stories {
+    flex: 1.5 1.5 40%;
+  }
+
+  .navi-item {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .services {
+    width: 40%;
+  }
+
+  .introduction {
+    font-size: 72px;
+  }
+
+  .occupation {
+    font-size: 32px;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    gap: 15px;
+    margin-bottom: 70px;
+  }
+
+  .submain {
+    flex-direction: row-reverse;
+    background-size: 45%;
+    background-image: url(Images/Illustration-header.png);
+    background-position: 100% -20%;
+    padding-bottom: 150px;
+  }
+
+  .introtext {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .recentwork {
+    border-bottom: 0;
+    flex: 2;
+    width: 100%;
+  }
+
+  .recentdiv {
+    display: flex;
+  }
+
+  .recent-title {
+    align-items: center;
+    display: flex;
+    padding-bottom: 3rem;
+    width: 100%;
+  }
+
+  .hrrecent {
+    flex: 3;
+    width: 100%;
+  }
+
+  .multi {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .multipost {
+    margin-top: 0;
+  }
+
+  .see {
+    width: 300px;
+    display: none;
+  }
+
+  .mid-part {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .grid-item {
+    width: 300px;
+  }
+
+  .card1 {
+    display: none;
+  }
+
+  .card2 {
+    display: none;
+  }
+
+  .card3 {
+    display: none;
+  }
+
+  .card4 {
+    display: block;
+  }
+
+  .card5 {
+    justify-content: flex-end;
+  }
+
+  .gridder {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+  }
+
+  .about-me {
+    background-image: url(Images/aboutimg.png);
+    background-position: 100% 17%;
+    background-size: 50%;
+  }
+
+  .main-ul {
+    text-align: left;
+  }
+
+  .lang {
+    padding-left: 0;
+  }
+
+  .frame1 {
+    padding-left: 0;
+  }
+
+  .skills2 {
+    padding-left: 0;
+  }
+
+  .btnresume {
+    margin-bottom: 100px;
+  }
+
+  .abouthr {
+    width: 90%;
+  }
+
+  .footer-p {
+    width: 400px;
+    text-align: left;
+  }
+
+  .input-container {
+    width: 500px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-div {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  .touchbtn {
+    align-self: flex-start;
+  }
 }
