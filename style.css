@@ -61,7 +61,7 @@ body {
 }
 
 .occupation {
-  color: #fff;
+  color: #ffffff;
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 500;
@@ -73,7 +73,7 @@ body {
 }
 
 .services {
-  color: #fff;
+  color: #f4f5f7;
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
@@ -495,6 +495,10 @@ form {
     column-gap: 25px;
   }
 
+  .balay {
+    padding: 0;
+    width: 500px;
+  }
   .navi-item {
     text-decoration: none;
     color: #fff;
@@ -566,6 +570,10 @@ form {
     gap: 15px;
   }
 
+  .multipost {
+    margin-top: 0;
+  }
+
   .see {
     width: 300px;
     display: none;
@@ -608,8 +616,26 @@ form {
 
   .about-me {
     background-image: url(Images/aboutimg.png);
-    background-position: 100% 10%;
+    background-position: 100% 17%;
+    background-size: 50%;
   }
+
+  .main-ul {
+    text-align: left;
+  }
+
+  .lang {
+    padding-left: 0;
+  }
+
+  .frame1 {
+    padding-left: 0;
+  }
+
+  .skills2 {
+    padding-left: 0;
+  }
+
 
   .btnresume {
     margin-bottom: 100px;
