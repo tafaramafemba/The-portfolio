@@ -497,7 +497,11 @@ form {
 
   .balay {
     padding: 0;
-    width: 500px;
+    flex: 1.5 1.5 60%;
+  }
+
+  .stories {
+    flex: 1.5 1.5 40%;
   }
 
   .navi-item {
