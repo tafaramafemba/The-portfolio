@@ -481,9 +481,9 @@ form {
 }
 
 @media (min-width: 992px) {
-   /* desktop site */
+  /* desktop site */
   .hamburger {
-  display: none;
+    display: none;
   }
 
   .navilist {
