@@ -42,6 +42,13 @@ body {
   font-family: 'Roboto', serif;
   font-weight: 700;
   font-size: 15px;
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 2s;
+}
+
+.name:hover {
+  font-size: 20px;
 }
 
 .introduction {
@@ -192,6 +199,8 @@ p {
   padding: 12px;
   font-family: 'Inter', serif;
   font-size: 18px;
+  transition-duration: 1s;
+  transition-delay: 1s;
 }
 
 .pro {
@@ -228,6 +237,8 @@ p {
   padding: 12px;
   font-family: 'Inter', serif;
   font-size: 18px;
+  transition-duration: 1s;
+  transition-delay: 1s;
 }
 
 .probtn:hover {
@@ -319,6 +330,8 @@ p {
   font-size: 18px;
   margin-left: 24px;
   margin-bottom: 325px;
+  transition-duration: 1s;
+  transition-delay: 1s;
 }
 
 .btnresume:hover {
@@ -442,6 +455,8 @@ p {
   border: none;
   font-family: 'Inter', serif;
   font-weight: 700;
+  transition-duration: 1s;
+  transition-delay: 1s;
 }
 
 .touchbtn:hover {
