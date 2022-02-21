@@ -11,6 +11,9 @@ This is a portfolio that outlines my experience and skillset as a software devel
 - CSS
 -Figma
 
+## Link to website
+https://tafaramafemba.github.io/The-portfolio/
+
 ## Authors
 
 👤 **Author**
