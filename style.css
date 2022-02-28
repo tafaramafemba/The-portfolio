@@ -29,12 +29,33 @@ body {
 
 .ul-div {
   display: none;
+  padding: 0;
+  position: absolute;
   width: 100%;
+  height: 100%;
+  flex-direction: column;
+  top: 50px;
+  transition: all 0.5s;
+  background: #3c3a39;
+  overflow-y: auto;
+}
+
+.navilist {
+  display: flex;
+  flex-direction: column;
+}
+
+.navilist li a {
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+  text-decoration: none;
+  padding-top: 25px;
 }
 
 .ul-div ul {
   flex-direction: column;
-  width: 100%;
+  padding-right: 35px;
 }
 
 .ul-div ul li {
@@ -43,6 +64,14 @@ body {
 
 .ul-div.active {
   display: flex;
+}
+
+.ul-div ul li {
+  text-align: center;
+}
+
+.mailimg {
+  display: none;
 }
 
 .main {
@@ -556,12 +585,12 @@ form {
   }
 
   .ul-div {
-    display: flex;  
+    display: flex;
     width: 40%;
   }
 
   .ul-div ul {
-    flex-direction: row;    
+    flex-direction: row;
   }
 
   .jsmenu {
