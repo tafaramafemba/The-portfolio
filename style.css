@@ -555,6 +555,15 @@ form {
     column-gap: 25px;
   }
 
+  .ul-div {
+    display: flex;  
+    width: 40%;
+  }
+
+  .ul-div ul {
+    flex-direction: row;    
+  }
+
   .jsmenu {
     display: none;
   }
