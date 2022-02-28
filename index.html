@@ -14,30 +14,31 @@
         href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;500&family=Poppins&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFR515X375"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFR515X375"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-FFR515X375');
-</script>
+        gtag('config', 'G-FFR515X375');
+    </script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
     <header class="navibar">
         <a href="#" class="name">John Doe</a>
-        <a href="javascript:void(0);" class="jsmenu" onclick="menufunction()"><img src="Images/hamburger.png" class="hamburger" alt="menu"></a>
-        <div id="ul-div">
+        <a href="#" class="jsmenu"><img src="Images/hamburger.png" class="hamburger" alt="menu"></a>
+        <div class="ul-div">
             <ul class="navilist">
                 <li><a href="#" class="navi-item">Portfolio</a></li>
                 <li><a href="#" class="navi-item">About</a></li>
                 <li><a href="#" class="navi-item">Contact</a></li>
-                <li><a href="#" class="mailimg"><img src="Images/Mail.png" alt="Mail icon" ></a></li>
+                <li><a href="#" class="mailimg"><img src="Images/Mail.png" alt="Mail icon"></a></li>
             </ul>
         </div>
-        
+
     </header>
     <section class="main">
         <div class="submain">
@@ -48,7 +49,7 @@
                     experience!
                     If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
             </div>
-            
+
             <ul class="icons">
                 <li><i class="fab fa-github"></i></li>
                 <li><i class="fab fa-linkedin-in"></i></li>
@@ -63,30 +64,31 @@
     </section>
 
     <section class="mid-part">
-            <div class="recent-title">
-                <h2 class="recentwork">My Recent Works</h2>
-                <hr class="hrrecent">
-            </div>
+        <div class="recent-title">
+            <h2 class="recentwork">My Recent Works</h2>
+            <hr class="hrrecent">
+        </div>
 
-        
+
         <div class="grid-container">
             <div class="multi">
                 <img src="Images/balay.png" alt="placeholder" class="balay">
                 <div class="stories">
-                <h3 class="multipost">Multi-Post Stories</h3>
-                <p class="singular-p">A daily selection of privately personalized <br> reads; no accounts or sign-ups
-                    required. <br>
-                    has been the industry's standard dummy <br> text ever since the 1500s, when an <br>
-                    unknown printer took a standard dummy text.</p>
-                <ul class="languages">
-                    <li><button class="btn">css</button></li>
-                    <li><button class="btn">html</button></li>
-                    <li><button class="btn boot">bootstrap</button></li>
-                    <li><button class="btn">Ruby</button></li>
-                </ul>
-                <button class="probtn">See Project</button>
+                    <h3 class="multipost">Multi-Post Stories</h3>
+                    <p class="singular-p">A daily selection of privately personalized <br> reads; no accounts or
+                        sign-ups
+                        required. <br>
+                        has been the industry's standard dummy <br> text ever since the 1500s, when an <br>
+                        unknown printer took a standard dummy text.</p>
+                    <ul class="languages">
+                        <li><button class="btn">css</button></li>
+                        <li><button class="btn">html</button></li>
+                        <li><button class="btn boot">bootstrap</button></li>
+                        <li><button class="btn">Ruby</button></li>
+                    </ul>
+                    <button class="probtn">See Project</button>
                 </div>
-                
+
             </div>
             <div class="gridder">
                 <div class="grid-item card5">
@@ -169,7 +171,7 @@
                 </div>
 
             </div>
-            
+
         </div>
     </section>
     <section class="about-me">
@@ -195,7 +197,7 @@
                     </ul>
                 </li>
             </ul>
-            <ul class="main-ul">        
+            <ul class="main-ul">
                 <li class="headli">
                     <div><img src="Images/Rectangle56.png" class="rectangle56" alt="shape">
                         <p class="alignim">Frameworks</p>
@@ -208,8 +210,8 @@
                         <li>Selenium</li>
                     </ul>
                 </li>
-            </ul> 
-            <ul class="main-ul skills">   
+            </ul>
+            <ul class="main-ul skills">
                 <li class="headli">
                     <div><img src="Images/Rectangle57.png" class="rectangle57" alt="shape">
                         <p class="alignim">Skills</p>
@@ -224,25 +226,27 @@
                 </li>
             </ul>
         </div>
-        
+
     </section>
 
     <footer>
         <div class="footer-div">
-            <p class="footer-p">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+            <p class="footer-p">I'm always interested in hearing about new projects, so if you'd like to chat please get
+                in touch.</p>
         </div>
         <div class="footer-div">
             <form action="https://formspree.io/f/mdobgell" method="post">
                 <ul class="input-container">
                     <li><input type="text" name="name" id="name" placeholder="Full name" required maxlength="30"></li>
                     <li><input type="email" name="email" id="email" required placeholder="Email address"></li>
-                    <li><textarea name="message" id="messagebox" cols="10" rows="10" placeholder="Enter text here" required maxlength="500"></textarea></li>
+                    <li><textarea name="message" id="messagebox" cols="10" rows="10" placeholder="Enter text here"
+                            required maxlength="500"></textarea></li>
                     <li><button type="submit" class="touchbtn">Get in touch</button></li>
                 </ul>
             </form>
         </div>
-        
-       
+
+
         <ul class="footer-icons">
             <li><i class="fab fa-github"></i></li>
             <li><i class="fab fa-linkedin-in"></i></li>
