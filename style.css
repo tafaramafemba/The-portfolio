@@ -198,7 +198,13 @@ i {
   gap: 12px;
 }
 
-li {
+.icons li {
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 12px;
+}
+
+.input-container li {
   display: inline-flex;
   flex-direction: column;
   padding-left: 12px;
@@ -259,6 +265,12 @@ p {
 
 .languages {
   padding-left: 0;
+}
+
+.languages li {
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 12px;
 }
 
 .btn {
@@ -469,6 +481,12 @@ p {
   padding-left: 50px;
 }
 
+.langframe li {
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 12px;
+}
+
 .headli {
   padding-right: 40px;
   font-size: 32px;
@@ -580,6 +598,12 @@ p {
 .footer-icons i {
   color: #505f79;
   padding: 20px 0;
+}
+
+.footer-icons li {
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 12px;
 }
 
 form {
