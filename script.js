@@ -9,16 +9,16 @@ toggleButton.addEventListener('click', () => {
   text.style.display = 'none';
   toggleButton.style.display = 'none';
   x.style.display = 'block';
-})
+});
 
 function closer() {
   x.style.display = 'none';
-  navbarLinks.classList.remove('active')
+  navbarLinks.classList.remove('active');
   text.style.display = 'inline';
   toggleButton.style.display = 'block';
 }
 x.addEventListener('click', closer);
 
-navitems.forEach((navelement) =>{
+navitems.forEach((navelement) => {
   navelement.addEventListener('click', closer);
-})
+});
