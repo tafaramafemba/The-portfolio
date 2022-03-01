@@ -66,10 +66,6 @@ body {
   padding-right: 35px;
 }
 
-.ul-div ul li {
-  text-align: center;
-}
-
 .ul-div.active {
   display: flex;
 }
@@ -198,16 +194,14 @@ i {
   gap: 12px;
 }
 
-.icons li {
+li {
   display: inline-flex;
   flex-direction: column;
   padding-left: 12px;
 }
 
-.input-container li {
-  display: inline-flex;
-  flex-direction: column;
-  padding-left: 12px;
+.ul-div ul li {
+  text-align: center;
 }
 
 .mid-part {
@@ -265,12 +259,6 @@ p {
 
 .languages {
   padding-left: 0;
-}
-
-.languages li {
-  display: inline-flex;
-  flex-direction: column;
-  padding-left: 12px;
 }
 
 .btn {
@@ -481,12 +469,6 @@ p {
   padding-left: 50px;
 }
 
-.langframe li {
-  display: inline-flex;
-  flex-direction: column;
-  padding-left: 12px;
-}
-
 .headli {
   padding-right: 40px;
   font-size: 32px;
@@ -598,12 +580,6 @@ p {
 .footer-icons i {
   color: #505f79;
   padding: 20px 0;
-}
-
-.footer-icons li {
-  display: inline-flex;
-  flex-direction: column;
-  padding-left: 12px;
 }
 
 form {
