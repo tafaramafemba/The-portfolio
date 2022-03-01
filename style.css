@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;500&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;500&family=Poppins&family=Roboto:wght@700&display=swap");
 
 /* mobile site */
 body {
@@ -11,6 +11,7 @@ body {
   justify-content: space-between;
   color: #fff;
   font-weight: 600;
+  font-family: "Inter", serif;
   font-size: 15px;
   line-height: 20px;
   align-items: flex-end;
@@ -19,7 +20,65 @@ body {
   height: 60px;
 }
 
+.jsmenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 40px;
+  padding-right: 15px;
+}
+
+.ul-div {
+  display: none;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  top: 50px;
+  transition: all 0.5s;
+  background: #3e3c3c;
+}
+
 .navilist {
+  display: flex;
+  flex-direction: column;
+}
+
+.navi-item {
+  text-align: left;
+}
+
+.navilist li a {
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+  text-decoration: none;
+  padding-top: 25px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.ul-div ul {
+  flex-direction: column;
+  padding-right: 35px;
+}
+
+.ul-div.active {
+  display: flex;
+}
+
+.cancel-img {
+  display: none;
+  width: 50px;
+  height: 50px;
+  align-self: flex-end;
+  padding-right: 50px;
+}
+
+.mailimg {
   display: none;
 }
 
@@ -33,18 +92,23 @@ body {
 }
 
 .name {
+  display: block;
   text-decoration: none;
   color: #fff;
   padding-left: 15px;
   padding-bottom: 5px;
   margin-top: 15px;
   margin-bottom: 15px;
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
   font-weight: 700;
   font-size: 15px;
   transition-property: font-size;
   transition-duration: 4s;
   transition-delay: 2s;
+}
+
+.name.disabled {
+  display: none;
 }
 
 .name:hover {
@@ -53,7 +117,7 @@ body {
 
 .introduction {
   color: #f55800;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 65px;
@@ -92,7 +156,7 @@ body {
 
 .occupation {
   color: #fff;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -104,7 +168,7 @@ body {
 
 .services {
   color: #f4f5f7;
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -136,6 +200,10 @@ li {
   padding-left: 12px;
 }
 
+.ul-div ul li {
+  text-align: center;
+}
+
 .mid-part {
   padding-left: 20px;
   padding-top: 60px;
@@ -145,7 +213,7 @@ li {
 
 .recentwork {
   align-content: center;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-size: 40px;
   line-height: 52px;
   margin-bottom: 0;
@@ -158,7 +226,7 @@ li {
 }
 
 .multipost {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -170,21 +238,21 @@ li {
 }
 
 p {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-size: 16px;
   font-weight: 400;
   color: #fff;
 }
 
 .singular-p {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-size: 16px;
   font-weight: 400;
   color: black;
 }
 
 .multiple-p {
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -194,7 +262,7 @@ p {
 }
 
 .btn {
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   background-color: #fff;
   border: 1px solid #8993a4;
   box-sizing: border-box;
@@ -220,7 +288,7 @@ p {
   border-radius: 0;
   border: 0 none;
   padding: 12px;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-size: 18px;
   transition-duration: 1s;
   transition-delay: 0.5s;
@@ -258,7 +326,7 @@ p {
   border-radius: 0;
   border: 0 none;
   padding: 12px;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-size: 18px;
   transition-duration: 1s;
   transition-delay: 0.5s;
@@ -283,7 +351,7 @@ p {
 }
 
 .professional-btn {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -321,7 +389,7 @@ p {
 
 .about {
   color: #f55800;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 65px;
@@ -349,7 +417,7 @@ p {
   border-radius: 0;
   border: 0 none;
   padding: 12px;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-size: 18px;
   margin-left: 24px;
   margin-bottom: 325px;
@@ -385,7 +453,7 @@ p {
   padding-bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
 }
 
 .skills {
@@ -437,7 +505,7 @@ p {
 }
 
 .input-container input {
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-weight: 400;
   font-size: 15px;
 }
@@ -454,7 +522,7 @@ p {
   border: 1px solid white;
   color: black;
   padding: 12px;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-weight: 400;
   font-size: 15px;
 }
@@ -464,7 +532,7 @@ p {
   padding: 50px 24px;
   font-size: 34px;
   text-align: center;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-weight: 700;
   line-height: 44px;
 }
@@ -476,7 +544,7 @@ p {
   background-color: #ff6b00;
   color: white;
   border: none;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-weight: 700;
   transition-duration: 1s;
   transition-delay: 0.5s;
@@ -527,10 +595,31 @@ form {
   .navilist {
     display: flex;
     padding-right: 100px;
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-weight: 600;
     font-size: 15px;
     column-gap: 25px;
+  }
+
+  .ul-div {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    position: relative;
+    top: 0;
+    height: 50px;
+  }
+
+  .ul-div ul {
+    flex-direction: row;
+  }
+
+  .hr-menu {
+    display: none;
+  }
+
+  .jsmenu {
+    display: none;
   }
 
   .balay {
