@@ -11,6 +11,7 @@ body {
   justify-content: space-between;
   color: #fff;
   font-weight: 600;
+  font-family: "Inter", serif;
   font-size: 15px;
   line-height: 20px;
   align-items: flex-end;
@@ -25,6 +26,7 @@ body {
   justify-content: space-between;
   width: 30px;
   height: 40px;
+  padding-right: 15px;
 }
 
 .ul-div {
@@ -36,13 +38,16 @@ body {
   flex-direction: column;
   top: 50px;
   transition: all 0.5s;
-  background: #3c3a39;
-  overflow-y: auto;
+  background: #3e3c3c;
 }
 
 .navilist {
   display: flex;
   flex-direction: column;
+}
+
+.navi-item {
+  text-align: left;
 }
 
 .navilist li a {
@@ -51,6 +56,9 @@ body {
   color: #fff5e1;
   text-decoration: none;
   padding-top: 25px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  border-bottom: 1px solid #fff;
 }
 
 .ul-div ul {
@@ -66,8 +74,12 @@ body {
   display: flex;
 }
 
-.ul-div ul li {
-  text-align: center;
+.cancel-img {
+  display: none;
+  width: 50px;
+  height: 50px;
+  align-self: flex-end;
+  padding-right: 50px;
 }
 
 .mailimg {
@@ -84,6 +96,7 @@ body {
 }
 
 .name {
+  display: block;
   text-decoration: none;
   color: #fff;
   padding-left: 15px;
@@ -96,6 +109,10 @@ body {
   transition-property: font-size;
   transition-duration: 4s;
   transition-delay: 2s;
+}
+
+.name.disabled {
+  display: none;
 }
 
 .name:hover {
@@ -586,11 +603,19 @@ form {
 
   .ul-div {
     display: flex;
+    flex-direction: row;
     width: 40%;
+    position: relative;
+    top: 0;
+    height: 50px;
   }
 
   .ul-div ul {
     flex-direction: row;
+  }
+
+  .hr-menu {
+    display: none;
   }
 
   .jsmenu {
