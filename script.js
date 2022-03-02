@@ -22,3 +22,19 @@ x.addEventListener('click', closer);
 navitems.forEach((navelement) => {
   navelement.addEventListener('click', closer);
 });
+
+const form = document.querySelector('.form');
+const email = document.querySelector('#email');
+const error = document.querySelector('.error-message');
+
+form.addEventListener('submit', (e) => {
+  const Emailtext = email.value;
+  if (Emailtext !== Emailtext.toLowerCase()) {
+    e.preventDefault();
+    error.style.color = 'red';
+    error.style.gridColumn = '2/3';
+    error.textContent = 'Please Enter your Email in Lowercase';
+  } else {
+    error.textContent = '';
+  }
+});

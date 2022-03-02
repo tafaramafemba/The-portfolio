@@ -29,14 +29,14 @@
 
     <header class="navibar">
         <a href="#" class="name">John Doe</a>
-        <a href="#" class="jsmenu" ><img src="/Images/hamburger.png" alt="menu"><i onclick="myFunction(this)"></i></a>
+        <a href="#" class="jsmenu"><img src="/Images/hamburger.png" alt="menu"><i onclick="myFunction(this)"></i></a>
         <div class="ul-div">
             <img src="/Images/Icon-Cancel.png" alt="Cancel" class="cancel-img">
             <ul class="navilist">
                 <li><a href="#portfolio" class="navi-item">Portfolio</a></li>
-                        <li><a href="#about" class="navi-item">About</a></li>
-                        <li><a href="#contact" class="navi-item">Contact</a></li>
-                        <li><a href="#" class="mailimg"><img src="Images/Mail.png" alt="Mail icon"></a></li>
+                <li><a href="#about" class="navi-item">About</a></li>
+                <li><a href="#contact" class="navi-item">Contact</a></li>
+                <li><a href="#" class="mailimg"><img src="Images/Mail.png" alt="Mail icon"></a></li>
             </ul>
         </div>
 
@@ -236,7 +236,7 @@
                 in touch.</p>
         </div>
         <div class="footer-div" id="contact">
-            <form action="https://formspree.io/f/mdobgell" method="post">
+            <form class="form" action="https://formspree.io/f/mdobgell" method="post">
                 <ul class="input-container">
                     <li><input type="text" name="name" id="name" placeholder="Full name" required maxlength="30"></li>
                     <li><input type="email" name="email" id="email" required placeholder="Email address"></li>
@@ -244,6 +244,7 @@
                             required maxlength="500"></textarea></li>
                     <li><button type="submit" class="touchbtn">Get in touch</button></li>
                 </ul>
+                <span class="error-message"></span>
             </form>
         </div>
 
