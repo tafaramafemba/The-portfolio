@@ -78,10 +78,6 @@ body {
   padding-right: 50px;
 }
 
-.mailimg {
-  display: none;
-}
-
 .main {
   background-color: #1c1a19;
 }
@@ -252,6 +248,7 @@ li {
   display: flex;
   flex-direction: row-reverse;
   gap: 25px;
+  justify-content: space-between;
 }
 
 .snapshot-btn {
@@ -699,9 +696,6 @@ form {
 
 @media (min-width: 992px) {
   /* desktop site */
-  .hamburger {
-    display: none;
-  }
 
   .navilist {
     display: flex;
@@ -710,6 +704,7 @@ form {
     font-weight: 600;
     font-size: 15px;
     column-gap: 25px;
+    margin-top: 30px;
   }
 
   .navilist li a {
@@ -717,11 +712,12 @@ form {
     line-height: 0;
     color: #fff5e1;
     text-decoration: none;
-    padding-top: 5px;
+    padding-top: 0px;
     padding-bottom: 0;
     padding-left: 10px;
-    border-bottom: 0;
+    border: none;
   }
+  
 
   .ul-div {
     display: flex;
@@ -730,6 +726,7 @@ form {
     position: relative;
     top: 0;
     height: 50px;
+    align-items: center;
   }
 
   .ul-div ul {
@@ -872,13 +869,6 @@ form {
 
   .descripcontainer p {
     padding-bottom: 75px;
-  }
-
-  .multih2 {
-  }
-
-  .multiflex {
-    gap: 547px;
   }
 
   .card2 {
