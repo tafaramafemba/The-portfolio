@@ -222,6 +222,17 @@ li {
   padding-right: 16px;
 }
 
+.x {
+padding-top: 15px;
+margin-right: 5px;
+}
+
+.multiflex {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 25px;
+}
+
 .snapshot-btn {
   background: #ff6b00;
   color: #fff;
@@ -298,6 +309,10 @@ li {
 .balay {
   padding-top: 70px;
   width: 310px;
+}
+
+.cardplus {
+  display: none;
 }
 
 .multipost {
@@ -797,6 +812,42 @@ form {
 
   .card1 {
     display: none;
+  }
+  
+  .cardplus {
+  display: block;
+  margin-top: 0;
+  }
+
+  .ruby {
+    width: 100px;
+  }
+
+  .snapshot-img {
+    width: 50vw;
+    height: 50vh;
+  }
+
+  .modalContainer {
+    margin-left: 88px;
+    backdrop-filter: blur(8px);
+    height: 80vh;
+  }
+  .multicontainer {
+    display: flex;
+    gap: 10px;
+  }
+
+  .descripcontainer p {
+    padding-bottom: 75px;
+  }
+
+  .multih2 {
+
+  }
+
+  .multiflex {
+    gap: 547px;
   }
 
   .card2 {
