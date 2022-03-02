@@ -216,6 +216,13 @@ li {
   text-align: center;
 }
 
+p {
+  font-family: "Crete Round", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
 .modalContainer {
   transform: scale(0);
   position: fixed;
@@ -343,13 +350,6 @@ li {
   text-align: left;
   margin-top: 16px;
   margin-bottom: 16px;
-}
-
-p {
-  font-family: "Crete Round", serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
 }
 
 .singular-p {
@@ -712,13 +712,12 @@ form {
     line-height: 0;
     color: #fff5e1;
     text-decoration: none;
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 0;
     padding-left: 10px;
     border: none;
   }
   
-
   .ul-div {
     display: flex;
     flex-direction: row;
@@ -862,6 +861,7 @@ form {
     backdrop-filter: blur(8px);
     height: 80vh;
   }
+  
   .multicontainer {
     display: flex;
     gap: 10px;
