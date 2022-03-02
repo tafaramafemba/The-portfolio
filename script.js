@@ -3,9 +3,7 @@ const midpart = document.querySelector('.mid-part');
 const navbarLinks = document.getElementsByClassName('ul-div')[0];
 const text = document.getElementsByClassName('name')[0];
 const x = document.querySelector('.cancel-img');
-const navitems = document.querySelectorAll('.navi-item');
-const jsmenu = document.querySelector('.jsmenu');
-const navbar = document.querySelector('.ul-div');
+// const navitems = document.querySelectorAll('.navi-item');
 const overlay = document.getElementById('overlay');
 
 toggleButton.addEventListener('click', () => {
@@ -23,10 +21,6 @@ function closer() {
   toggleButton.style.display = 'block';
 }
 x.addEventListener('click', closer);
-
-navitems.forEach((navelement) => {
-  navelement.addEventListener('click', closer);
-});
 
 const popup = [
 {
@@ -127,8 +121,6 @@ for(let i=0; i<6; i += 1){
 //popupWindow
 let modalContainer;
 function popupWindow() {
-  jsmenu.style.display = 'none';
-  navbar.style.display = 'none';
   modalContainer = document.createElement('section');
   modalContainer.className = 'modalContainer';
   modalContainer.innerHTML = `
@@ -151,8 +143,8 @@ function popupWindow() {
     <img src="/Images/snapshot.png" alt="" class="snapshot-img">
     <div class="descripcontainer">
     <p>${popup[0].description}</p>
-    <button class="snapshot-btn1">See Live <img src="/Images/live.png" class="btnpng"></button>
-    <button class="snapshot-btn">See Source <img src="/Images/git.png" class="btnpng"></button>
+    <button class="snapshot-btn1" onclick="javascript:window.open('${popup[0].live}', '_blank');">See Live <img src="/Images/live.png" class="btnpng"></button>
+    <button class="snapshot-btn" onclick="javascript:window.open('${popup[0].source}', '_blank');">See Source <img src="/Images/git.png" class="btnpng"></button>
     </div>
 
     </div>
