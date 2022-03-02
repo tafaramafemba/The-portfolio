@@ -26,7 +26,6 @@ navitems.forEach((navelement) => {
 const form = document.querySelector('.form');
 const email = document.querySelector('#email');
 const error = document.querySelector('.error-message');
-const formbutton = document.querySelector('.touchbtn');
 
 form.addEventListener('submit', (e) => {
   const Emailtext = email.value;
