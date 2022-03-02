@@ -169,14 +169,14 @@ closeModalButtons.addEventListener('click', () => {
   popupwind.classList.remove('opened');
 });
 
-for (let i = 0; i < 6; i+=1) {
+for (let i = 0; i < 6; i += 1) {
   const openModalButtons2 = document.getElementsByClassName('see')[i];
   const closeModalButtons2 = document.getElementsByClassName('x')[0];
 
   openModalButtons2.addEventListener('click', () => {
     overlay.classList.add('opened');
     popupwind.classList.add('opened');
-    });
+  });
 
   overlay.addEventListener('click', () => {
     overlay.classList.remove('opened');
