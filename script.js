@@ -131,17 +131,30 @@ function popupWindow() {
   modalContainer.className = 'modalContainer';
   modalContainer.innerHTML = `
   <div class="popup-window">
+  <div class="multiflex">
+  <p class="x">&#x2716;</p>
     <h2 class= "multih2">Multi Post Stories</h2>
-    <img src="/Images/Icon-Cancel.png" alt="Cancel" class="cancel-img">
+  </div>
     <ul class="languages card1">
         <li><button class="popbtn">${popup[0].technologies[1]}</button></li>
         <li><button class="popbtn boot">${popup[0].technologies[3]}</button></li>
         <li><button class="popbtn">${popup[0].technologies[4]}</button></li>
     </ul>
+    <ul class="languages card4 cardplus">
+        <li><button class="popbtn">${popup[0].technologies[1]}</button></li>
+        <li><button class="popbtn boot">${popup[0].technologies[3]}</button></li>
+        <li><button class="popbtn ruby">${popup[0].technologies[2]}</button></li>
+    </ul>
+    <div class="multicontainer">
     <img src="/Images/snapshot.png" alt="" class="snapshot-img">
-    <p>${popup[0].carddecsrip}</p>
+    <div class="descripcontainer">
+    <p>${popup[0].description}</p>
     <button class="snapshot-btn1">See Live <img src="/Images/live.png" class="btnpng"></button>
     <button class="snapshot-btn">See Source <img src="/Images/git.png" class="btnpng"></button>
+    </div>
+
+    </div>
+    
 
 </div>`
 ;
