@@ -22,16 +22,16 @@ x.addEventListener('click', closer);
 
 const popup = [
   {
-  namepop: 'Profesional Art Printing Data',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-  smalldescrip: 'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard',
-  carddecsrip: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  image: ['/Images/snapshot.png'],
-  worksimages: ['/Images/grid-template.png'],
-  technologies: ['html', 'css', 'ruby on rails', 'bootstrap', 'ruby'],
-  live: ['https://tafaramafemba.github.io/The-portfolio/'],
-  source: ['https://github.com/tafaramafemba/The-portfolio']
-  }
+    namepop: 'Profesional Art Printing Data',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    smalldescrip: 'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard',
+    carddecsrip: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    image: ['/Images/snapshot.png'],
+    worksimages: ['/Images/grid-template.png'],
+    technologies: ['html', 'css', 'ruby on rails', 'bootstrap', 'ruby'],
+    live: ['https://tafaramafemba.github.io/The-portfolio/'],
+    source: ['https://github.com/tafaramafemba/The-portfolio'],
+  },
 ];
 
 const container = document.querySelector('.grid-container');
@@ -162,29 +162,29 @@ openModalButtons.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
   overlay.classList.remove('opened');
   popupwind.classList.remove('opened');
-})
+});
 
 closeModalButtons.addEventListener('click', () => {
   overlay.classList.remove('opened');
   popupwind.classList.remove('opened');
-})
+});
 
-for (let i = 0; i < 6; i++) {
+for (let i = 0; i < 6; i+=1) {
   const openModalButtons2 = document.getElementsByClassName('see')[i];
   const closeModalButtons2 = document.getElementsByClassName('x')[0];
 
   openModalButtons2.addEventListener('click', () => {
-  overlay.classList.add('opened');
-  popupwind.classList.add('opened');
+    overlay.classList.add('opened');
+    popupwind.classList.add('opened');
     });
 
   overlay.addEventListener('click', () => {
-  overlay.classList.remove('opened');
-  popupwind.classList.remove('opened');
-    });
+    overlay.classList.remove('opened');
+    popupwind.classList.remove('opened');
+  });
 
   closeModalButtons2.addEventListener('click', () => {
-  overlay.classList.remove('opened');
-  popupwind.classList.remove('opened');
-    });
-};
+    overlay.classList.remove('opened');
+    popupwind.classList.remove('opened');
+  });
+}
