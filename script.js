@@ -156,22 +156,44 @@ midpart.appendChild(modalContainer);
 }
 popupWindow();
 
+    const openModalButtons = document.getElementsByClassName('probtn')[0];
+    const closeModalButtons = document.getElementsByClassName('x')[0];
+    const popupwind = document.getElementsByClassName('modalContainer')[0];
+    
+    openModalButtons.addEventListener('click', () => {
+        overlay.classList.add('opened');
+        popupwind.classList.add('opened');
+    });
+    
+    overlay.addEventListener('click', () => {
+        overlay.classList.remove('opened');
+        popupwind.classList.remove('opened');
+    })
+    
+    closeModalButtons.addEventListener('click', () => {
+        overlay.classList.remove('opened');
+        popupwind.classList.remove('opened');
+    })
 
-const openModalButtons = document.getElementsByClassName('probtn')[0];
-const closeModalButtons = document.getElementsByClassName('x')[0];
-const popupwind = document.getElementsByClassName('modalContainer')[0];
+    for(let i=0; i<6; i++){
+        const openModalButtons2 = document.getElementsByClassName('see')[i];
+        const closeModalButtons2 = document.getElementsByClassName('x')[0];
+        
+        openModalButtons2.addEventListener('click', () => {
+            overlay.classList.add('opened');
+            popupwind.classList.add('opened');
+        });
+        
+        overlay.addEventListener('click', () => {
+            overlay.classList.remove('opened');
+            popupwind.classList.remove('opened');
+        })
+        
+        closeModalButtons2.addEventListener('click', () => {
+            overlay.classList.remove('opened');
+            popupwind.classList.remove('opened');
+        })
+    }
+    
 
-openModalButtons.addEventListener('click', () => {
-    overlay.classList.add('opened');
-    popupwind.classList.add('opened');
-});
-
-overlay.addEventListener('click', () => {
-    overlay.classList.remove('opened');
-    popupwind.classList.remove('opened');
-})
-
-closeModalButtons.addEventListener('click', () => {
-    overlay.classList.remove('opened');
-    popupwind.classList.remove('opened');
-})
+    
