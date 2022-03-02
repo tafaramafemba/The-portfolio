@@ -6,12 +6,14 @@ const x = document.querySelector('.cancel-img');
 const navitems = document.querySelectorAll('.navi-item');
 const jsmenu = document.querySelector('.jsmenu');
 const navbar = document.querySelector('.ul-div');
+const overlay = document.getElementById('overlay');
 
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.add('active');
   text.style.display = 'none';
   toggleButton.style.display = 'none';
   x.style.display = 'block';
+
 });
 
 function closer() {
@@ -54,7 +56,7 @@ for(let i=0; i<6; i += 1){
           <li><button class="btn boot">${popup[0].technologies[3]}</button></li>
           <li><button class="btn">${popup[0].technologies[4]}</button></li>
       </ul>
-      <button class="probtn">See Project</button>
+      <button class="probtn" modal-target="#popup-window" >See Project</button>
   </div>
   </div>
   <div class="gridder">
@@ -161,3 +163,23 @@ function popupWindow() {
 midpart.appendChild(modalContainer);
 }
 popupWindow();
+
+
+const openModalButtons = document.getElementsByClassName('probtn')[0];
+const closeModalButtons = document.getElementsByClassName('x')[0];
+const popupwind = document.getElementsByClassName('modalContainer')[0];
+
+openModalButtons.addEventListener('click', () => {
+    overlay.classList.add('opened');
+    popupwind.classList.add('opened');
+});
+
+overlay.addEventListener('click', () => {
+    overlay.classList.remove('opened');
+    popupwind.classList.remove('opened');
+})
+
+closeModalButtons.addEventListener('click', () => {
+    overlay.classList.remove('opened');
+    popupwind.classList.remove('opened');
+})

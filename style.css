@@ -91,6 +91,22 @@ body {
   padding-bottom: 20px;
 }
 
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.opened {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .name {
   display: block;
   text-decoration: none;
@@ -204,7 +220,8 @@ li {
   text-align: center;
 }
 
- .modalContainer {
+.modalContainer {
+  transform: scale(0);
   position: fixed;
   top: 0;
   left: 0;
@@ -215,6 +232,10 @@ li {
   background-color: #fff;
 }
 
+.modalContainer.opened {
+  transform: scale(1);
+}
+
 .modalContainer p {
   color: #1c1a19;
   font-family: "Inter", serif;
@@ -223,8 +244,8 @@ li {
 }
 
 .x {
-padding-top: 15px;
-margin-right: 5px;
+  padding-top: 15px;
+  margin-right: 5px;
 }
 
 .multiflex {
@@ -813,10 +834,10 @@ form {
   .card1 {
     display: none;
   }
-  
+
   .cardplus {
-  display: block;
-  margin-top: 0;
+    display: block;
+    margin-top: 0;
   }
 
   .ruby {
@@ -843,7 +864,6 @@ form {
   }
 
   .multih2 {
-
   }
 
   .multiflex {
