@@ -26,7 +26,7 @@ const popup = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     smalldescrip: 'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard',
     carddecsrip: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    image: ['/Images/snapshot.png'],
+    image: ['./Images/snapshot.png'],
     worksimages: ['/Images/grid-template.png'],
     technologies: ['html', 'css', 'ruby on rails', 'bootstrap', 'ruby'],
     live: ['https://tafaramafemba.github.io/The-portfolio/'],
@@ -136,11 +136,11 @@ function popupWindow() {
         <li><button class="popbtn ruby">${popup[0].technologies[2]}</button></li>
     </ul>
     <div class="multicontainer">
-    <img src="/Images/snapshot.png" alt="" class="snapshot-img">
+    <img src="./Images/snapshot.png" alt="" class="snapshot-img">
     <div class="descripcontainer">
     <p>${popup[0].description}</p>
-    <button class="snapshot-btn1" onclick="javascript:window.open('${popup[0].live}', '_blank');">See Live <img src="/Images/live.png" class="btnpng"></button>
-    <button class="snapshot-btn" onclick="javascript:window.open('${popup[0].source}', '_blank');">See Source <img src="/Images/git.png" class="btnpng"></button>
+    <button class="snapshot-btn1" onclick="javascript:window.open('${popup[0].live}', '_blank');">See Live <img src="./Images/live.png" class="btnpng"></button>
+    <button class="snapshot-btn" onclick="javascript:window.open('${popup[0].source}', '_blank');">See Source <img src="./Images/git.png" class="btnpng"></button>
     </div>
 
     </div>
