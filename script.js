@@ -205,7 +205,7 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-const formData = {};
+const storeForm = {};
 
 function saveData(data) {
   const stringyData = JSON.stringify(data);
@@ -216,14 +216,14 @@ document.querySelector('.form').addEventListener('change', () => {
   const inputs = document.querySelectorAll('input');
   const textArea = document.querySelector('textarea');
   inputs.forEach((input) => {
-    formData[input.id] = input.value;
+    storeForm[input.id] = input.value;
   });
-  formData[textArea.id] = textArea.value;
-  saveData(formData);
+  storeForm[textArea.id] = textArea.value;
+  saveData(storeForm);
 });
 
-function reinsertValues(formData) {
-  Object.entries(formData).forEach((ele) => {
+function reinsertValues(storeForm) {
+  Object.entries(storeForm).forEach((ele) => {
     const [key, value] = ele;
     document.getElementById(key).value = value;
   });
