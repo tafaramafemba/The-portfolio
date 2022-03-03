@@ -78,10 +78,6 @@ body {
   padding-right: 50px;
 }
 
-.mailimg {
-  display: none;
-}
-
 .main {
   background-color: #1c1a19;
 }
@@ -89,6 +85,22 @@ body {
 .hamburger {
   padding-right: 15px;
   padding-bottom: 20px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.opened {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .name {
@@ -204,6 +216,105 @@ li {
   text-align: center;
 }
 
+p {
+  font-family: "Crete Round", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.modalContainer {
+  transform: scale(0);
+  position: fixed;
+  top: 3%;
+  left: 0;
+  height: 98%;
+  width: 80%;
+  margin-left: 30px;
+  padding-left: 16px;
+  background-color: #fff;
+}
+
+.modalContainer.opened {
+  transform: scale(1);
+}
+
+.modalContainer p {
+  color: #1c1a19;
+  font-family: "Inter", serif;
+  font-weight: 400;
+  padding-right: 16px;
+}
+
+.x {
+  padding-top: 15px;
+  margin-right: 5px;
+}
+
+.multiflex {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 25px;
+  justify-content: space-between;
+}
+
+.snapshot-btn {
+  background: #ff6b00;
+  color: #fff;
+  height: 48px;
+  width: 150px;
+  left: 0;
+  top: 259px;
+  border-radius: 0;
+  border: 0 none;
+  padding: 12px;
+  font-family: "Inter", serif;
+  font-size: 16px;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+  margin-left: 10px;
+}
+
+.snapshot-btn1 {
+  background: #ff6b00;
+  color: #fff;
+  height: 48px;
+  width: 140px;
+  left: 0;
+  top: 259px;
+  border-radius: 0;
+  border: 0 none;
+  padding: 12px;
+  font-family: "Inter", serif;
+  font-size: 16px;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+}
+
+.snapshot-img {
+  height: 33vh;
+  width: 72vw;
+}
+
+.popbtn {
+  font-family: "Inter", serif;
+  background-color: #fff;
+  border: 1px solid #1c1a19;
+  box-sizing: border-box;
+  width: 49px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.multih2 {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
 .mid-part {
   padding-left: 20px;
   padding-top: 60px;
@@ -225,6 +336,10 @@ li {
   width: 310px;
 }
 
+.cardplus {
+  display: none;
+}
+
 .multipost {
   font-family: "Crete Round", serif;
   font-size: 32px;
@@ -235,13 +350,6 @@ li {
   text-align: left;
   margin-top: 16px;
   margin-bottom: 16px;
-}
-
-p {
-  font-family: "Crete Round", serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
 }
 
 .singular-p {
@@ -588,9 +696,6 @@ form {
 
 @media (min-width: 992px) {
   /* desktop site */
-  .hamburger {
-    display: none;
-  }
 
   .navilist {
     display: flex;
@@ -599,6 +704,18 @@ form {
     font-weight: 600;
     font-size: 15px;
     column-gap: 25px;
+    margin-top: 30px;
+  }
+
+  .navilist li a {
+    font-size: 15px;
+    line-height: 0;
+    color: #fff5e1;
+    text-decoration: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    border: none;
   }
 
   .ul-div {
@@ -608,6 +725,7 @@ form {
     position: relative;
     top: 0;
     height: 50px;
+    align-items: center;
   }
 
   .ul-div ul {
@@ -722,6 +840,35 @@ form {
 
   .card1 {
     display: none;
+  }
+
+  .cardplus {
+    display: block;
+    margin-top: 0;
+  }
+
+  .ruby {
+    width: 100px;
+  }
+
+  .snapshot-img {
+    width: 50vw;
+    height: 50vh;
+  }
+
+  .modalContainer {
+    margin-left: 88px;
+    backdrop-filter: blur(8px);
+    height: 80vh;
+  }
+
+  .multicontainer {
+    display: flex;
+    gap: 10px;
+  }
+
+  .descripcontainer p {
+    padding-bottom: 75px;
   }
 
   .card2 {
