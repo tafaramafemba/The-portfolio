@@ -204,3 +204,34 @@ form.addEventListener('submit', (e) => {
     error.textContent = '';
   }
 });
+
+const formData = {};
+
+function saveData(data) {
+  const stringyData = JSON.stringify(data);
+  window.localStorage.setItem('customFormData', stringyData);
+}
+
+document.querySelector('.form').addEventListener('change', () => {
+  const inputs = document.querySelectorAll('input');
+  const textArea = document.querySelector('textarea');
+  inputs.forEach((input) => {
+    formData[input.id] = input.value;
+  });
+  formData[textArea.id] = textArea.value;
+  saveData(formData);
+});
+
+function reinsertValues(formData) {
+  Object.entries(formData).forEach((ele) => {
+    const [key, value] = ele;
+    document.getElementById(key).value = value;
+  });
+}
+
+window.addEventListener('load', () => {
+  const formDataObj = JSON.parse(window.localStorage.getItem('customFormData'));
+  if (formDataObj) {
+    reinsertValues(formDataObj);
+  }
+});
