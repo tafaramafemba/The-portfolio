@@ -18,7 +18,7 @@ function closer() {
   text.style.display = 'inline';
   toggleButton.style.display = 'block';
 }
-x.addEventListener('click', closer);
+x.addEventListener('click', closer());
 
 const popup = [
   {
